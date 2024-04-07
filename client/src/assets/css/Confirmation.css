@@ -1,0 +1,52 @@
+.confirmationView {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 1em auto;
+    width: 80%;
+    height: 80%;
+    background-color: #333333;
+}
+
+ul {
+    width: 100%;
+    text-align: left;
+}
+ul > li {
+    margin: 1em;
+}
+.confirmation_title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.confirmation_td{
+    align-items: flex-end;
+    margin: 3px 0;
+}
+.confirmation_tr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.confirmation_table{
+    font-weight: 400;
+    margin: 15px 0;
+    width: 100%;
+}
+.price_quantity{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.book_quantity{
+    width: 96px;
+    text-align: center;
+}
+.customer_info{
+    margin-top: 30px;
+    width: 100%;
+}

@@ -1,0 +1,103 @@
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,400;1,700&display=swap');
+
+:root {
+	--title-font-family: "Proza Libre", serif;
+	--default-font-family: "Roboto", sans-serif;
+	--defatul-font-size: 1.25rem;
+	--default-text-color: #FEDD58;
+	--neutral-color: #4e4e4e;
+	--nav-color: #6C6C6C50;
+	--primary-color: #FEDD58;
+	--secondary-color: #FEA858;
+	--primary-background-color: #0A0F14;
+    --primary-color-dark: #0A0F14;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+/* For small text sizes, you typically want to increase your line height. */
+p {
+  line-height: 1.5;
+  margin: 0;
+
+}
+
+/* Get rid of styling (numbers, bullets, and spacing) for lists. */
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.flow-content > * + * {
+  margin-top: 1rem;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.dark-background {
+  background-color: var(--neutral-color);
+  color: whitesmoke;
+}
+
+
+body {
+	height: 100%;
+    background-image: url('../images/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: var(--primary-background-color);
+	margin: 0;
+	font-family: 'IBM Plex Mono', monospace;
+
+}
+
+Link{
+  color: black;
+  cursor: pointer;
+}
+
+Link:visited{
+  color: black;
+}

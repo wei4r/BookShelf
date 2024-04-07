@@ -1,0 +1,103 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 10px;
+	width: 90%;
+	height: 90%;
+	overflow-y: auto;
+}
+.grid-item {
+	background-color: rgba(194, 194, 194, 0.9); /* Optional: for better visibility */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+}
+@media screen and (max-width: 1200px) {
+	.grid-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 800px) {
+	.grid-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.book-cover{
+	flex: 40;
+	height: 80%;
+	aspect-ratio: 1 / 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.book-cover:hover img{
+	border-width: 3px;
+	border-style: solid;
+	border-color: white;
+}
+.read-now-button {
+	position: absolute;
+	bottom: 10px; /* 調整為所需的值 */
+	width: 50%;
+	min-width: 80px;
+	background-color: var(--secondary-color);
+	color: black;
+	font-weight: 700;
+	padding: 7px 3px;
+	border-style: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+}
+.read-now-button:hover{
+	background-color: var(--primary-color);
+	color: black;
+}
+.grid-item img {
+	border-radius: 3px;
+	height: 100%;
+	/* padding-left: 5%; */
+}
+
+.book-content{
+	flex: 60;
+	height: 80%;
+	display: flex;
+	color: black;
+	align-items: center;
+	flex-direction: column;
+	/* gap: 20px; */
+	justify-content: space-between;
+}
+.book-title{
+	color: white;
+	margin: 1% 2%;
+	font-size: 1.75rem;
+}
+.book-author{
+	font-size: 1.25rem;
+	color: #606060;
+}
+.book-price{
+	color: var(--primary-color);
+	font-weight: 700;
+	font-size: 3rem;
+	/* margin-top: 10%; */
+}
+.add-to-cart{
+	background-color: var(--secondary-color);
+	border-style: none;
+	border-radius: 5px;
+
+	width: 40%;
+	height: 2.25rem;
+
+	font-weight: 800;
+	font-size: 1.4rem;
+}
+.add-to-cart:hover{
+	background-color: var(--primary-color);
+}

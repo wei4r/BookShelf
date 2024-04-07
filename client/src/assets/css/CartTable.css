@@ -1,0 +1,238 @@
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    padding-top: 90px;
+    padding-bottom: 45px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.cart-table {
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr 1fr;
+    top: 90px;
+    row-gap: 1em;
+    background-color: rgb(169, 169, 169);
+    max-height: 100vh; /* Set a maximum height */
+    height: 100%;
+    bottom: 44px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    border-width: 0;
+    flex: 3;
+}
+.cart-table-heading{
+    height: 100px;
+}
+.cart2 {
+}
+.table-heading {
+    font-size: 16px;
+    top: 0;
+    height: 40px;
+    /*background: !* Your background here *!;*/
+    z-index: 10;
+}
+ul {
+    display: contents;
+}
+ul > li {
+    display: contents;
+}
+.table-heading {
+    background-color: #333;
+    color: white;
+}
+.table-heading > * {
+    background-color: #333;
+    padding: 0.5em;
+    text-align: center;
+}
+.heading-book {
+    grid-column: 1 / 2;
+    height: 40px;
+}
+.heading-price {
+    height: 40px;
+    grid-column: 2 / 3;
+}
+.heading-quantity {
+    grid-column: 3 / 4;
+    height: 40px;
+}
+.heading-subtotal {
+    grid-column: -2 / -1;
+    height: 40px;
+}
+.cart-book-image {
+    display: flex;
+    padding: 0 1em;
+    grid-column: 1 / 2;
+    flex: 1;
+    max-height: 155px;
+}
+.cart-book-title {
+    flex: 3;
+    padding-left: 10px;
+    padding-top: 3px;
+    max-height: 155px;
+}
+.cart2 img {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+.rect {
+    background-color: var(--primary-color-dark);
+}
+.narrow-rect {
+    width: 75px;
+    height: 100px;
+}
+.square {
+    width: 100px;
+    height: 100px;
+}
+.wide-rect {
+    width: 125px;
+    height: 100px;
+}
+.cart-book-price {
+    text-align: center;
+    align-self: center;
+    font-size: 1.25rem;
+    grid-column: 2/3;
+    max-height: 155px;
+}
+.cart-book-quantity {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-height: 155px;
+    grid-column: 3 / 4;
+}
+/*button {*/
+/*    background-color: rgba(0,0,0,0);*/
+/*}*/
+.quantity{
+    align-self: center;
+    font-size: 1.5rem;
+}
+.cart-book-subtotal {
+    align-self: center;
+    padding-left: 1em;
+    padding-right: 2em;
+    font-size: 1.25rem;
+    text-align: right;
+}
+/* Row separators in the table */
+.line-sep {
+    display: block;
+    height: 2px;
+    background-color: grey;
+    grid-column: 1 / -1;
+}
+/* Increment/decrement buttons */
+.icon-button {
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+}
+.inc-button {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 0.25em;
+}
+.inc-button:hover {
+    color: var(--primary-color-dark);
+}
+.dec-button {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+.dec-button:hover {
+    color: #aaa;
+}
+/* Chevron buttons */
+.dec-arrow-button,
+.inc-arrow-button {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+.dec-arrow-button:hover,
+.inc-arrow-button:hover {
+    color: var(--primary-color-dark);
+}
+input[type="number"] {
+    width: 4em;
+}
+select {
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid var(--primary-color-dark);
+    border-radius: 3px;
+}
+.clear-button-li {
+    align-content: center;
+}
+.clear-button {
+    grid-column: 4/5;
+    height: 50px;
+    align-content: center;
+    padding-left: 40px;
+}
+.clear-button button {
+    border-radius: 5px;
+    border-style: solid;
+    align-content: center;
+    background-color: #4e4e4e;
+}
+.clear-button button:hover {
+    background-color: var(--primary-color);
+    color: #333333;
+    border-color: #cccccc;
+}
+.empty-cart-message {
+    grid-column: 1/5;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.go-to-checkout{
+    flex: 1;
+}
+.proceed-checkout {
+    width: 235px;
+    padding: 1px 10px;
+    background-color: var(--primary-color);
+    border-width: 4px;
+    border-style: solid;
+    border-color: #333333;
+    color: #333333;
+    border-radius: 20px;
+}
+.continue {
+    width: 235px;
+    padding: 1px 10px;
+    background-color: #4e4e4e;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #cccccc;
+    color: #cccccc;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.go-to-checkout button:hover{
+    color: white;
+    background-color: var(--secondary-color);
+    border-color: white;
+    border-width: 4px;
+}

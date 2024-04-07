@@ -1,0 +1,33 @@
+.footer {
+	position: fixed;
+    display: flex;
+	justify-content: space-between;
+	bottom: 0;
+	width: 100%;
+    background-color: var(--nav-color);
+	/* text-align: center; */
+	font-weight: 400;
+	padding: 10px;
+}
+.left-content {
+	color: #8E8E8E;
+
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+  
+.left-content p {
+	margin: 0;
+}
+.right-content {
+	display: flex;
+    align-items: center;
+
+	margin-right: 30px;
+	gap: 20px;
+}	
+
+.social-media{
+	display: flex;
+}
